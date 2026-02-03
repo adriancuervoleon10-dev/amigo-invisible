@@ -1,7 +1,7 @@
 <?php
 // Script para configurar mi aplicación web
-// Establece las variables que indican los directorios de las clases
-// Establece las variables para hacer la conexión a la base de datos
+// ← AGREGAR ESTA LÍNEA AL INICIO:
+require_once __DIR__ . '/Config.php';  // ← ¡ESTO ES TODO!
 
 // Obtiene la instancia del objeto que guarda los datos de configuración
 $config = Config::singleton();
@@ -12,8 +12,8 @@ $config->set('modelsFolder', 'models/');
 $config->set('viewsFolder', 'views/');
 
 // Parámetros de conexión a la BD
-$config->set('dbhost', 'db'); // Cambiar 'db' por 'localhost' si se usa XAMPP
+$config->set('dbhost', 'localhost');  // Ya lo cambiaste ✅
 $config->set('dbname', 'amigo_invisible');
 $config->set('dbuser', 'root');
-$config->set('dbpass', 'root');
+$config->set('dbpass', '');
 ?>
