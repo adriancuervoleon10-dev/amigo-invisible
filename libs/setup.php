@@ -12,7 +12,7 @@ if (getenv('RAILWAY_ENVIRONMENT') || $_SERVER['HTTP_HOST'] !== 'localhost') {
     $config->set('dbhost', 'trolley.proxy.rlwy.net');
     $config->set('dbname', 'amigo_invisible');
     $config->set('dbuser', 'root');
-    $config->set('dbpass', '');
+    $config->set('dbpass', 'bZlhcgxycIPAMWyGwswxartyuXgegCQr');
 } else {
     // XAMPP LOCAL
     $config->set('dbhost', 'localhost');
